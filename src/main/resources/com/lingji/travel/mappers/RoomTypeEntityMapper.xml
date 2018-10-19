@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingji.travel.mappers.RoomTypeEntityMapper">
+  <resultMap id="BaseResultMap" type="com.lingji.travel.entities.RoomTypeEntity">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="hotel_id" jdbcType="INTEGER" property="hotelId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="cover_url" jdbcType="VARCHAR" property="coverUrl" />
+    <result column="livecount" jdbcType="INTEGER" property="livecount" />
+    <result column="cash" jdbcType="DECIMAL" property="cash" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="orderno" jdbcType="INTEGER" property="orderno" />
+    <result column="area" jdbcType="DOUBLE" property="area" />
+    <result column="bedtype" jdbcType="VARCHAR" property="bedtype" />
+    <result column="nosmoke" jdbcType="INTEGER" property="nosmoke" />
+    <result column="window" jdbcType="INTEGER" property="window" />
+    <result column="wifi" jdbcType="INTEGER" property="wifi" />
+    <result column="breakfast" jdbcType="INTEGER" property="breakfast" />
+    <result column="is_delete" jdbcType="INTEGER" property="isDelete" />
+    <result column="createdate" jdbcType="TIMESTAMP" property="createdate" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+    <result column="create_user" jdbcType="INTEGER" property="createUser" />
+    <result column="hotwater" jdbcType="INTEGER" property="hotwater" />
+    <result column="network" jdbcType="INTEGER" property="network" />
+    <result column="image" jdbcType="LONGVARCHAR" property="image" />
+  </resultMap>
+</mapper>

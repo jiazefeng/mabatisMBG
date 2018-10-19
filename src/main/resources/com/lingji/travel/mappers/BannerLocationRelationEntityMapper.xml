@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingji.travel.mappers.BannerLocationRelationEntityMapper">
+  <resultMap id="BaseResultMap" type="com.lingji.travel.entities.BannerLocationRelationEntity">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="banner_id" jdbcType="INTEGER" property="bannerId" />
+    <result column="banner_location_id" jdbcType="INTEGER" property="bannerLocationId" />
+  </resultMap>
+</mapper>

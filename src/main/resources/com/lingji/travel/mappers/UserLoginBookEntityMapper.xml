@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingji.travel.mappers.UserLoginBookEntityMapper">
+  <resultMap id="BaseResultMap" type="com.lingji.travel.entities.UserLoginBookEntity">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="tokenId" jdbcType="VARCHAR" property="tokenid" />
+    <result column="userId" jdbcType="INTEGER" property="userid" />
+    <result column="createDate" jdbcType="TIMESTAMP" property="createdate" />
+    <result column="state" jdbcType="INTEGER" property="state" />
+  </resultMap>
+</mapper>

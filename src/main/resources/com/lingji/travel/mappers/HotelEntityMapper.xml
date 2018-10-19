@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingji.travel.mappers.HotelEntityMapper">
+  <resultMap id="BaseResultMap" type="com.lingji.travel.entities.HotelEntity">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="merchant_id" jdbcType="INTEGER" property="merchantId" />
+    <result column="tradingarea_id" jdbcType="INTEGER" property="tradingareaId" />
+    <result column="mchid" jdbcType="VARCHAR" property="mchid" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="tel" jdbcType="VARCHAR" property="tel" />
+    <result column="coverUrl" jdbcType="VARCHAR" property="coverurl" />
+    <result column="longitude" jdbcType="DOUBLE" property="longitude" />
+    <result column="latitude" jdbcType="DOUBLE" property="latitude" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="location" jdbcType="VARCHAR" property="location" />
+    <result column="memo" jdbcType="VARCHAR" property="memo" />
+    <result column="orderno" jdbcType="INTEGER" property="orderno" />
+    <result column="business_start_time" jdbcType="VARCHAR" property="businessStartTime" />
+    <result column="business_end_time" jdbcType="VARCHAR" property="businessEndTime" />
+    <result column="is_delete" jdbcType="INTEGER" property="isDelete" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="create_user" jdbcType="INTEGER" property="createUser" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+    <result column="starLevel" jdbcType="INTEGER" property="starlevel" />
+    <result column="is_top" jdbcType="BIT" property="isTop" />
+    <result column="park" jdbcType="INTEGER" property="park" />
+    <result column="wifi" jdbcType="INTEGER" property="wifi" />
+    <result column="province" jdbcType="VARCHAR" property="province" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <result column="district" jdbcType="VARCHAR" property="district" />
+    <result column="video_url" jdbcType="LONGVARCHAR" property="videoUrl" />
+    <result column="img_url" jdbcType="LONGVARCHAR" property="imgUrl" />
+    <result column="description" jdbcType="LONGVARCHAR" property="description" />
+  </resultMap>
+</mapper>

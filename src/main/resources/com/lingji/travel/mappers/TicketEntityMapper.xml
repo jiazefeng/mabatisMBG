@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingji.travel.mappers.TicketEntityMapper">
+  <resultMap id="BaseResultMap" type="com.lingji.travel.entities.TicketEntity">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="ticket_category_id" jdbcType="INTEGER" property="ticketCategoryId" />
+    <result column="scenie_spot_id" jdbcType="INTEGER" property="scenieSpotId" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="subtitle" jdbcType="VARCHAR" property="subtitle" />
+    <result column="qrcode_bgimg" jdbcType="VARCHAR" property="qrcodeBgimg" />
+    <result column="marketprice" jdbcType="DOUBLE" property="marketprice" />
+    <result column="price" jdbcType="DOUBLE" property="price" />
+    <result column="childprice" jdbcType="DOUBLE" property="childprice" />
+    <result column="image" jdbcType="VARCHAR" property="image" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="orderno" jdbcType="INTEGER" property="orderno" />
+    <result column="stock" jdbcType="INTEGER" property="stock" />
+    <result column="begin_time" jdbcType="TIMESTAMP" property="beginTime" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
+    <result column="viewcount" jdbcType="INTEGER" property="viewcount" />
+    <result column="labels" jdbcType="VARCHAR" property="labels" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="allowperoson" jdbcType="INTEGER" property="allowperoson" />
+    <result column="is_delete" jdbcType="INTEGER" property="isDelete" />
+    <result column="createdate" jdbcType="TIMESTAMP" property="createdate" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+    <result column="create_user" jdbcType="INTEGER" property="createUser" />
+    <result column="pictures" jdbcType="LONGVARCHAR" property="pictures" />
+  </resultMap>
+</mapper>

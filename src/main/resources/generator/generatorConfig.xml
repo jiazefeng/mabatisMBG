@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!-- 引入外部属性文件 -->
+    <properties resource="config.properties"/>
+
+    <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <!-- 配置通用Mapper的MBG插件相关信息 -->
+        <plugin type="${mapper.plugin}">
+            <property name="mappers" value="${mapper.Mapper}"/>
+        </plugin>
+
+        <!-- 配置连接数据库的基本信息 -->
+        <jdbcConnection
+                driverClass="${jdbc.driverClass}"
+                connectionURL="${jdbc.url}"
+                userId="${jdbc.user}"
+                password="${jdbc.password}">
+        </jdbcConnection>
+
+        <!-- 配置Java实体类存放位置 -->
+        <javaModelGenerator
+                targetPackage="${targetModelPackage}"
+                targetProject="${targetJavaProject}"/>
+
+        <!-- 配置XxxMapper.xml存放位置 -->
+        <sqlMapGenerator
+                targetPackage="${targetXMLPackage}"
+                targetProject="${targetResourcesProject}"/>
+
+        <!-- 配置XxxMapper.java存放位置 -->
+        <javaClientGenerator
+                targetPackage="${targetMapperPackage}"
+                targetProject="${targetJavaProject}"
+                type="XMLMAPPER"/>
+
+        <!-- 根据数据库表生成Java文件的相关规则 -->
+        <!-- tableName="%"表示数据库中所有表都参与逆向工程，此时使用默认规则 -->
+        <!-- 默认规则：table_dept→TableDept -->
+        <!-- 不符合默认规则时需要使用tableName和domainObjectName两个属性明确指定 -->
+        <!--<table tableName="tb_super_user" domainObjectName="SuperUserEntity">-->
+        <!--&lt;!&ndash; 配置主键生成策略 &ndash;&gt;-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_images" domainObjectName="ImagesEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_role" domainObjectName="RoleEntity" >-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_module" domainObjectName="ModuleEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_role_module" domainObjectName="RoleModuleEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_log" domainObjectName="LogEntity" >-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_user_login_book" domainObjectName="UserLoginBookEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_banner" domainObjectName="BannerEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_banner_location" domainObjectName="BannerLocationEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_banner_location_relation" domainObjectName="BannerLocationRelationEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_news" domainObjectName="NewsEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_images" domainObjectName="ImagesEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_tradingarea" domainObjectName="TradingareaEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_restaurant_category" domainObjectName="RestaurantCategoryEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_restaurant_tag" domainObjectName="RestaurantTagEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_restaurant" domainObjectName="RestaurantEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_restaurant_comment" domainObjectName="RestaurantCommentEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_restaurant_category_relation" domainObjectName="RestaurantCategoryRelationEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_dishes" domainObjectName="DishesEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_merchant" domainObjectName="MerchantEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_scenie_spot" domainObjectName="ScenicSpotEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_scenie_category" domainObjectName="ScenicCategoryEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_scenie_category_relation" domainObjectName="ScenicCategoryRelationEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_scenie_spot_comment" domainObjectName="ScenicSpotCommentEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_scenie_album" domainObjectName="ScenicAlbumEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_ticket_category" domainObjectName="TicketCategoryEntity" >-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_ticket" domainObjectName="TicketEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_hotel" domainObjectName="HotelEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_hotel_comment" domainObjectName="HotelCommentEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_floor" domainObjectName="FloorEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_room" domainObjectName="RoomEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_roomtype" domainObjectName="RoomTypeEntity">-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <table tableName="tb_notice" domainObjectName="NoticeEntity">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+    </context>
+</generatorConfiguration>

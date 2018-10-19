@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingji.travel.mappers.ImagesEntityMapper">
+  <resultMap id="BaseResultMap" type="com.lingji.travel.entities.ImagesEntity">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="originalImagePath" jdbcType="VARCHAR" property="originalimagepath" />
+    <result column="compressImagePath" jdbcType="VARCHAR" property="compressimagepath" />
+    <result column="cutImagePath" jdbcType="VARCHAR" property="cutimagepath" />
+    <result column="state" jdbcType="INTEGER" property="state" />
+    <result column="imageType" jdbcType="VARCHAR" property="imagetype" />
+  </resultMap>
+</mapper>

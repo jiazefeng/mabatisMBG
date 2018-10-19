@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingji.travel.mappers.SuperUserEntityMapper">
+  <resultMap id="BaseResultMap" type="com.lingji.travel.entities.SuperUserEntity">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="phone_num" jdbcType="VARCHAR" property="phoneNum" />
+    <result column="officePhone" jdbcType="VARCHAR" property="officephone" />
+    <result column="logo" jdbcType="VARCHAR" property="logo" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="login_time" jdbcType="TIMESTAMP" property="loginTime" />
+    <result column="last_login_time" jdbcType="TIMESTAMP" property="lastLoginTime" />
+    <result column="is_delete" jdbcType="INTEGER" property="isDelete" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="modify_user" jdbcType="INTEGER" property="modifyUser" />
+    <result column="create_user" jdbcType="INTEGER" property="createUser" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="merchantId" jdbcType="INTEGER" property="merchantid" />
+    <result column="writer" jdbcType="INTEGER" property="writer" />
+    <result column="system_type" jdbcType="INTEGER" property="systemType" />
+    <result column="data_id" jdbcType="INTEGER" property="dataId" />
+  </resultMap>
+</mapper>

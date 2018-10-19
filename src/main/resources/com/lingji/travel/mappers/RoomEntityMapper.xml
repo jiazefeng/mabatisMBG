@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingji.travel.mappers.RoomEntityMapper">
+  <resultMap id="BaseResultMap" type="com.lingji.travel.entities.RoomEntity">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="hotel_id" jdbcType="INTEGER" property="hotelId" />
+    <result column="roomtype_id" jdbcType="INTEGER" property="roomtypeId" />
+    <result column="floor_id" jdbcType="INTEGER" property="floorId" />
+    <result column="roomnumber" jdbcType="VARCHAR" property="roomnumber" />
+    <result column="tel" jdbcType="VARCHAR" property="tel" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="roomstatus" jdbcType="INTEGER" property="roomstatus" />
+    <result column="is_delete" jdbcType="INTEGER" property="isDelete" />
+    <result column="createdate" jdbcType="TIMESTAMP" property="createdate" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+    <result column="create_user" jdbcType="INTEGER" property="createUser" />
+    <result column="description" jdbcType="LONGVARCHAR" property="description" />
+  </resultMap>
+</mapper>
